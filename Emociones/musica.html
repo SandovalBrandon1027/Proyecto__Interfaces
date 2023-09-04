@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones/Sonidos</title>
+    <link rel="stylesheet" href="mu.css">
+</head>
+<body>
+</body>
+</html></head>
+<body>
+<h1 class="h1">Sonidos Relajantes</h1>
+
+<ul>
+    <li><button onclick="playAudio('sonido.Bosque.mp3')">Sonido Bosque</button></li>
+    <li><button onclick="playAudio('sonido.Naturaleza.mp3')">Sonido Naturaleza </button></li>
+    <li><button onclick="playAudio('sonido.mp3')">Sonido de Relajacion</button></li>
+    <li><button onclick="playAudio('sonido.Lluvia.mp3')"> Sonido  de  Lluvia</button></li>
+    <li><button onclick="playAudio('sonido.Relajante.mp3')"> Sonido Relajante </button></li>
+
+</ul>
+<h2> Musicas </h2>
+<li><button onclick="playAudio('Musica.Bear.mp3')">Winter Bear - V</button></li>
+<li><button onclick="playAudio('Rihanna - Diamonds.mp3')">Diamonds - Rihanna </button></li>
+<li><button onclick="playAudio('Cancion.Instrumental.mp3')">Instrumentales</button></li>
+<li><button onclick="playAudio('Canciones.Ingles.mp3')"> Canciones Ingles</button></li>
+<li><button onclick="playAudio('If Only.DoveCameron.mp3')"> If Only - Dove Cameron </button></li>
+
+
+<audio id="relaxingSound" controls loop>
+    <source src="tu-sonido-relajante.mp3" type="audio/mpeg">
+    Tu navegador no admite el elemento de audio.
+</audio>
+
+<script>
+    var audio = document.getElementById("relaxingSound");
+
+    // Función para reproducir el audio seleccionado
+    function playAudio(source) {
+        audio.src = source;
+        audio.play();
+    }
+</script>
+</body>
+</html>

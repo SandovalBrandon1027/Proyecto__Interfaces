@@ -1,0 +1,41 @@
+body {
+    background-image: url('https://img.freepik.com/vector-gratis/coleccion-personajes-cerebro-dibujos-animados-que-tienen-idea-creativa-estudiando-leyendo-libro_74855-25064.jpg?w=2000');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+body {
+    text-align: center;
+}
+.h1 {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 90px;
+    position: absolute;
+    top: 0;
+
+}
+.h2{
+    font-size: 26px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 90px;
+    position: absolute;
+    top: 0;
+}

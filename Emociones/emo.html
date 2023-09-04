@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificador de Estrés</title>
+    <link rel="stylesheet" href="em.css">
+</head>
+<body>
+<h1>¿Cual es tu nivel de Estrés?</h1>
+<div class="stress-rating">
+    <p>Califica tu nivel de estrés:</p>
+    <span class="emoji" id="emoji">😐</span>
+    <input type="range" min="1" max="5" step="1" value="3" id="stress-level">
+</div>
+<button id="botonSonido" style="display: none;" onclick="location.href='musica.html'">Sonido/Canciones</button>
+<button id="botonJugar" style="display: none;">Jugar</button>
+
+<script>
+
+    const stressLevelInput = document.getElementById('stress-level');
+    const emojiSpan = document.getElementById('emoji');
+    const botonSonido = document.getElementById('botonSonido');
+    const botonJugar = document.getElementById('botonJugar');
+
+
+    stressLevelInput.addEventListener('input', () => {
+        const stressLevel = stressLevelInput.value;
+        let emoji = '';
+
+        switch (stressLevel) {
+            case '1':
+                emoji = '😄';
+                botonSonido.style.display = 'inline-block';
+                botonJugar.style.display = 'none';
+                break;
+            case '2':
+                emoji = '😊';
+                botonSonido.style.display = 'inline-block';
+                botonJugar.style.display = 'none';
+                break;
+            case '3':
+                emoji = '😐';
+                botonSonido.style.display = 'inline-block';
+                botonJugar.style.display = 'none';
+                break;
+            case '4':
+                emoji = '😟';
+                botonSonido.style.display = 'none';
+                botonJugar.style.display = 'inline-block';
+                botonJugar.addEventListener('click', () => {
+                    location.href = 'juego.html';
+                });
+
+                break;
+            case '5':
+                emoji = '😫';
+                botonSonido.style.display = 'none';
+                botonJugar.style.display = 'inline-block';
+                botonJugar.addEventListener('click', () => {
+                    location.href = 'juego.html';
+                });
+                break;
+            default:
+                emoji = '😐';
+                botonSonido.style.display = 'none';
+                botonJugar.style.display = 'none';
+
+        }
+
+        emojiSpan.textContent = emoji;
+
+    });
+
+
+</script>
+</body>
+</html>

@@ -25,6 +25,14 @@ body {
   background-color: white;
   margin: 5px 0;
 }
+/* Estilos para el textarea */
+textarea {
+  width: 90%; /* Ocupa todo el ancho disponible */
+  padding: 10px; /* Espacio alrededor del texto dentro del textarea */
+  font-size: 16px; /* Tamaño de fuente del texto dentro del textarea */
+  border: 1px solid #ccc; /* Borde del textarea */
+  border-radius: 5px; /* Bordes redondeados */
+}
 
 /* Estilos para el contenido */
 .content {
@@ -57,15 +65,4 @@ body {
   font-size: 16px;
 }
 
-/* Estilos para la imagen */
-.nueva_imagen img {
-  width: 200px; 
-  height: 100px; 
-  position: absolute; 
-  top: 150%; 
-  left: 15%; 
-  transform: translate(-30%, -7%);
-  border: 2px solid #000; 
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
-}
+
