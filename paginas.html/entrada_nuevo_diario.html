@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="entrada_nuevo_diario.css">
+    <title>menu</title>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Mueve la imagen dentro del div .header para que esté detrás del menú -->
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Configuracion</a></li>
+          <li><a href="#">Regresar al menú</a></li>
+          <li><a href="inicio_secion.html">Salir</a></li>
+          <!-- Puedes añadir más opciones aquí -->
+        </ul>
+      
+      </div>
+
+      <div class="content">
+        <h1>Escribe tu nuevo diario</h1>
+        <form id="entry-form">
+            <label for="entry-date">Fecha:</label>
+            <input type="date" id="entry-date" name="entry-date" required>
+            <br>
+            <br>
+            <br>
+
+            <label for="entry-tags">Etiquetas:</label>
+            <input type="text" id="entry-tags" name="entry-tags" placeholder="Separadas por comas">
+            <br>
+            <br>
+            <br>
+
+            <label for="entry-content">Mi día:</label>
+            <textarea id="entry-content" name="entry-content" rows="10" required></textarea>
+
+            <br>
+            <br>
+            <br>
+            
+            <label for="entry-image">Imagen:</label>
+            <input type="file" id="entry-image" name="entry-image">
+            <br>
+            <br>
+            
+            <button type="submit" onclick="guardarEntrada()">Guardar entrada</button>
+            <a href="perfil.html" class="crear_cuenta">Crear una cuenta</a>
+        </form>
+        
+        <div class="previous-entries">
+            <!-- Aquí podrías mostrar las entradas anteriores -->
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -12,10 +12,10 @@
           <div class="user-icon">
             <img src="../imagenes/icono_usuario.png" alt="User Icon">
           </div>
-          <form class="login-form">
+          <form class="login-form" onsubmit="redirectToMenu(); return false;">
             <input type="text" placeholder="Usuario" class="input-field">
             <input type="password" placeholder="Contraseña" class="input-field">
-            <button type="submit" class="login-button" onclick="redirectToMenu()">Iniciar sesión</button>
+            <button type="submit" class="login-button">Iniciar sesión</button>
             <a href="recuperacion_cuenta.html" class="forgot-password">¿Olvidaste tu contraseña?</a>
             <a href="registro.html" class="crear_cuenta">Crear una cuenta</a>
           </form>
@@ -24,7 +24,7 @@
 
       <script>
         function redirectToMenu() {
-            window.location.href = "menu.html";
+            window.location.href = "perfil.html";
         }
     </script>
 </body>

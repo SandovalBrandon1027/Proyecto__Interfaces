@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; /* Asegura que los elementos posicionados dentro se ajusten a él */
+  }
+  
+  /* Estilos para el encabezado */
+  .header {
+    background-color: #00bfff; /* Color celeste del frame */
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  /* Estilos para el contenido */
+  .content {
+    padding: 20px;
+  }
+  
+  /* Estilos para el menú */
+  .menu {
+    background-color: #00bfff; /* Color celeste del frame */
+    padding: 20px;
+    position: absolute; /* Posiciona el menú */
+    top: 50px; /* Coloca el menú debajo del encabezado */
+    right: 20px; /* Coloca el menú en la esquina superior derecha */
+    display: none;
+    z-index: 1; /* Asegura que el menú aparezca por encima del contenido */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Estilos para la imagen */
