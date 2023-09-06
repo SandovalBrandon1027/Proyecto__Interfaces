@@ -17,13 +17,14 @@ body {
 
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
-    margin-top: 150px;
+    margin-top: 170px;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
 }
 
 
