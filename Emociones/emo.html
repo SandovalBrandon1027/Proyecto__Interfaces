@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="em.css">
 </head>
 <body>
+<a href="../paginas.html/perfil.html" class="crear_cuenta">Regresar</a>
 <h1>¿Cual es tu nivel de Estrés?</h1>
 <div class="stress-rating">
     <br>
     <br>
-
     <p>Califica tu nivel de estrés:</p>
     <span class="emoji" id="emoji">😐</span>
     <input type="range" min="1" max="5" step="1" value="3" id="stress-level">
 </div>
 <button id="botonSonido" style="display: none;" onclick="location.href='musica.html'">Sonido/Canciones</button>
 <button id="botonJugar" style="display: none;">Jugar</button>
+
+
 
 <script>
 
@@ -73,8 +75,12 @@
         }
 
         emojiSpan.textContent = emoji;
+        
 
     });
+
+    
+   
 
 
 </script>

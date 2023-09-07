@@ -1,3 +1,5 @@
+/* cuerpo */
+
 .celular{
     position: relative;
     width: 500px;
@@ -10,6 +12,8 @@
 
 
 }
+
+/*rectangulo */
 
 .celular:before{
     content: "";
@@ -24,6 +28,7 @@
     border-radius: 10px;
 
 }
+/*circulo*/
 
 .celular:after{
     content: "";
@@ -38,6 +43,7 @@
     border-radius: 50%;
     border: 8px solid #fff ;
 
+/*tamaño del celular*/ 
 
 }
 iframe{

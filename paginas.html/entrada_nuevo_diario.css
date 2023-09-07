@@ -1,11 +1,11 @@
-/* Estilos generales */
+/* Estilos generales */  /*cuerpo*/
 body {
   margin: 0;
   padding: 0;
   position: relative; /* Asegura que los elementos posicionados dentro se ajusten a él */
 }
 
-/* Estilos para el encabezado */
+/* Estilos para el encabezado */  
 .header {
   background-color: #00bfff; /* Color celeste del frame */
   height: 50px;
@@ -15,6 +15,7 @@ body {
   padding: 0 20px;
 }
 
+/*icono */
 .menu-icon {
   cursor: pointer;
 }
