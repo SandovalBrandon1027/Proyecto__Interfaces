@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="perfil.css">
     <title>menu</title>
 </head>
+
 <body>
     <div class="header">
         <div class="menu-icon" onclick="toggleMenu()">
@@ -34,9 +35,83 @@
             <button>Evalua tu estres</button>
         </a>
     </div>
+
+    <body>
+        <div class="profile-container">
+            <img class="profile-image" src="../imagenes/perfil.png" alt="Tu Imagen de Perfil">
+            <div class="profile-name">
+                Nombre: John
+            </div>
+            <div class="profile-name">
+                Apellido: Mou
+            </div>
+            <button class="edit-button">Editar</button>
+        </div>
+    </body>
+
+    <body>
+        <div class="vertical-container">
+            <!-- Imágenes dispuestas verticalmente -->
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <img src="../imagenes/nueva_notapng.png" alt="Imagen 1">
+            <img src="../imagenes/notas_dias.png" alt="Imagen 2">
+            <img src="../imagenes/notas_dias.png" alt="Imagen 3">
+            <img src="../imagenes/notas_dias.png" alt="Imagen 4">
+            <img src="../imagenes/notas_dias.png" alt="Imagen 5">
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
     
     
-      
+
+    <body>
+        <div class="image-container">
+            <!-- Flecha izquierda -->
+            <div class="arrow left" onclick="changeImage(-1)">←</div>
+            
+            <!-- Imagen principal -->
+            <img id="mainImage" src="../imagenes/notas_aleatorias.png" alt="Imagen Principal">
+            
+            <!-- Flecha derecha -->
+            <div class="arrow right" onclick="changeImage(1)">→</div>
+        </div>
+    
+        <script>
+            // Datos de las imágenes
+            const images = [
+                'nota_ale1.jpeg',
+                'img-refle.jpg',
+                'motiva.jpeg',
+                'notas_aleatorias.png'
+                // Agrega más imágenes aquí
+            ];
+    
+            // Variable para rastrear la imagen actual
+            let currentImageIndex = 0;
+    
+            // Función para cambiar la imagen
+            function changeImage(offset) {
+                currentImageIndex += offset;
+    
+                // Ciclo de imágenes (ir de la última a la primera y viceversa)
+                if (currentImageIndex < 0) {
+                    currentImageIndex = images.length - 1;
+                } else if (currentImageIndex >= images.length) {
+                    currentImageIndex = 0;
+                }
+    
+                // Cambiar la fuente de la imagen principal
+                const mainImage = document.getElementById('mainImage');
+                mainImage.src = '../imagenes/' + images[currentImageIndex];
+            }
+        </script>
+    </body>
+    
+
     <script src="script2.js"></script>
 </body>
 </html>

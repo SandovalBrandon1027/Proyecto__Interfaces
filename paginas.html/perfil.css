@@ -57,4 +57,111 @@ body {
     font-size: 16px;
   }
   
+  /* Estilos para el contenedor */
+.image-container {
+  position: absolute; /* Permite el posicionamiento absoluto */
+  top: 350px; /* Ajusta la posición superior (en píxeles) */
+  left: 260px; /* Ajusta la posición izquierda (en píxeles) */
+  width: 175px; /* Ancho del cuadro */
+  height: 175px; /* Altura del cuadro */
+  border: 10px solid #ccc; /* Borde para el cuadro */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la imagen */
+.image-container img {
+  max-width: 150%; /* Ajusta el ancho de la imagen al cuadro */
+  max-height: 150%; /* Ajusta la altura de la imagen al cuadro */
+  object-fit: contain; /* Mantiene la imagen dentro del cuadro sin recortarla */
+}
+
+.profile-container {
+  position: absolute; /* Permite el posicionamiento absoluto */
+  top: 100px; /* Ajusta la posición superior (en píxeles) */
+  left: 275px; /* Ajusta la posición izquierda (en píxeles) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh; /* Altura del contenedor, ajusta según sea necesario */
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-image {
+  width: 100px; /* Ancho de la imagen de perfil */
+  height: 100px; /* Altura de la imagen de perfil */
+  border-radius: 50%; /* Forma circular para la imagen */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el nombre y el apellido */
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón de editar */
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.vertical-container {
+  position: absolute; /* Permite el posicionamiento absoluto */
+  top: 120px; /* Ajusta la posición superior (en píxeles) */
+  left: 20px; /* Ajusta la posición izquierda (en píxeles) */
+  width: 200px; /* Ancho del contenedor */
+  height: 400px; /* Altura del contenedor */
+  border: 5px solid #ccc; /* Borde para el contenedor */
+  overflow-y: auto; /* Habilita la barra de desplazamiento vertical si es necesario */
+  display: flex;
+  flex-direction: column; /* Imágenes dispuestas verticalmente */
+  align-items: center; /* Centra horizontalmente el contenido */
+  justify-content: center; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para las imágenes dentro del contenedor */
+.vertical-container img {
+  width: 90%; /* Ancho de las imágenes */
+  margin: 10px 0; /* Margen vertical entre las imágenes */
+  border: 3px solid #ccc; /* Borde para cada imagen */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 0px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+body {
+  background-color: #b1dfee; /* Color celeste pastel */
+  margin: 0; /* Elimina márgenes por defecto del cuerpo */
+  padding: 0; /* Elimina espacios por defecto del cuerpo */
+}
+  
   /* Estilos para la imagen */
