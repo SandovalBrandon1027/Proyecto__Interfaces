@@ -63,3 +63,12 @@ input[type="range"] {
 input:focus + button {
     display: inline-block;
 }
+/* Estilos para pantallas más pequeñas (máximo 600px de ancho) */
+@media (max-width: 600px) {
+    /* Agrega tus estilos aquí */
+}
+
+/* Estilos para pantallas más grandes (más de 600px de ancho) */
+@media (min-width: 601px) {
+    /* Agrega tus estilos aquí */
+}
